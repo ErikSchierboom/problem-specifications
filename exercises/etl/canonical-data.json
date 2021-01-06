@@ -1,10 +1,9 @@
 {
   "exercise": "etl",
-  "version": "2.0.0",
   "cases": [
     {
       "comments": [
-        "Transforms a set of legacy scrabble data stored as letters per score",
+        "Transforms a set of legacy Scrabble data stored as letters per score",
         "to a set of data stored score per letter.",
         "Note:  The expected input data for these tests should have",
         "integer keys (not stringified numbers as shown in the JSON below",
@@ -15,11 +14,12 @@
       "description": "Transform legacy to new",
       "cases": [
         {
+          "uuid": "78a7a9f9-4490-4a47-8ee9-5a38bb47d28f",
           "description": "single letter",
           "property": "transform",
           "input": {
-            "legacy": { 
-              "1": ["A"] 
+            "legacy": {
+              "1": ["A"]
             }
           },
           "expected": {
@@ -27,10 +27,11 @@
           }
         },
         {
+          "uuid": "60dbd000-451d-44c7-bdbb-97c73ac1f497",
           "description": "single score with multiple letters",
           "property": "transform",
           "input": {
-            "legacy": { 
+            "legacy": {
               "1": ["A", "E", "I", "O", "U"]
             }
           },
@@ -43,10 +44,11 @@
           }
         },
         {
+          "uuid": "f5c5de0c-301f-4fdd-a0e5-df97d4214f54",
           "description": "multiple scores with multiple letters",
           "property": "transform",
           "input": {
-            "legacy": { 
+            "legacy": {
               "1": ["A", "E"],
               "2": ["D", "G"]
             }
@@ -59,10 +61,11 @@
           }
         },
         {
+          "uuid": "5db8ea89-ecb4-4dcd-902f-2b418cc87b9d",
           "description": "multiple scores with differing numbers of letters",
           "property": "transform",
           "input": {
-            "legacy": { 
+            "legacy": {
                "1": ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
                "2": ["D", "G"],
                "3": ["B", "C", "M", "P"],

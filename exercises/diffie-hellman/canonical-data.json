@@ -1,6 +1,5 @@
 {
   "exercise": "diffie-hellman",
-  "version": "1.0.0",
   "comments": [
     "Optional tests to consider:",
     "* Validation of parameters:",
@@ -17,7 +16,8 @@
   ],
   "cases": [
     {
-      "description": "private key is in range 1 .. p",
+      "uuid": "1b97bf38-4307-418e-bfd2-446ffc77588d",
+      "description": "private key is greater than 1 and less than p",
       "property": "privateKeyIsInRange",
       "input": {},
       "expected": {
@@ -26,6 +26,7 @@
       }
     },
     {
+      "uuid": "68b2a5f7-7755-44c3-97b2-d28d21f014a9",
       "description": "private key is random",
       "property": "privateKeyIsRandom",
       "input": {},
@@ -34,6 +35,7 @@
       }
     },
     {
+      "uuid": "b4161d8e-53a1-4241-ae8f-48cc86527f22",
       "description": "can calculate public key using private key",
       "property": "publicKey",
       "input": {
@@ -44,6 +46,7 @@
       "expected": 8
     },
     {
+      "uuid": "cd02ad45-3f52-4510-99cc-5161dad948a8",
       "description": "can calculate secret using other party's public key",
       "property": "secret",
       "input": {
@@ -54,6 +57,7 @@
       "expected": 2
     },
     {
+      "uuid": "17f13c61-a111-4075-9a1f-c2d4636dfa60",
       "description": "key exchange",
       "property": "keyExchange",
       "input": {
